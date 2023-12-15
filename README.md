@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A simple photo viewer application implemented in C++ using .NET and WinForms.
+### <img src="Pexel_Demo.png">
 
 ## Features🎯
 
