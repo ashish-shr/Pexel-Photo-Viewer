@@ -309,7 +309,7 @@ namespace Pexel {
 }
 
 private: System::Void btnOpen_Click(System::Object^ sender, System::EventArgs^ e) {
-	fileDialog->Filter = "Image files(*.gif; *.jpg; *.jpeg; *.bmp; *.wmf; *.png *.webp) | *.gif; *.jpg; *.jpeg; *.bmp; *.wmf; *.png *.webp";
+	fileDialog->Filter = "Image files(*.gif; *.jpg; *.jpeg; *.bmp; *.wmf; *.png) | *.gif; *.jpg; *.jpeg; *.bmp; *.wmf; *.png";
 	if (fileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 	{
 		this->lbEmpty->Hide();
