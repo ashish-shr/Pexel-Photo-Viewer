@@ -227,10 +227,6 @@ namespace Pexel {
 			this->btnPrevious->UseVisualStyleBackColor = false;
 			this->btnPrevious->Click += gcnew System::EventHandler(this, &MyForm::btnPrevious_Click);
 			// 
-			// fileDialog
-			// 
-			this->fileDialog->Filter = L"\"JPEG|*.jpg|All Files|*.*\"";
-			// 
 			// panel2
 			// 
 			this->panel2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
@@ -313,6 +309,7 @@ namespace Pexel {
 }
 
 private: System::Void btnOpen_Click(System::Object^ sender, System::EventArgs^ e) {
+	fileDialog->Filter = "Image files(*.gif; *.jpg; *.jpeg; *.bmp; *.wmf; *.png *.webp) | *.gif; *.jpg; *.jpeg; *.bmp; *.wmf; *.png *.webp";
 	if (fileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 	{
 		this->lbEmpty->Hide();
